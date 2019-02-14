@@ -1,7 +1,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Bree+Serif|Fahkwang:400,500,700|Raleway:400,700|Ubuntu:400,500,700|Slabo+27px|Titillium+Web:400,600&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo:400,600,700,800|Fahkwang:400,500|Kanit:400,600|Libre+Franklin:400,500,700|Raleway:500,600,700,800" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <title>My profile page</title>
@@ -10,29 +10,29 @@
 
   <div class="container">
 
-    <div class="intro card text-center">
-      <img class="image-circle" src="images/photo2.jpg" alt="Doncho Penev" >
+    <div class="card text-center" id="top">
+      <img class="img-circle avatar-normal" src="images/photo2.jpg" alt="Doncho Penev" >
       <h1>Doncho Penev</h1>
       <h2>A rider @Le Wagon BCN</h2>
       <p>Getting ready to catch the next express to Big Success</p>
-      <a href="https://kitt.lewagon.com/alumni/donpenev">See for yourself</a>
+      <a href="https://kitt.lewagon.com/alumni/donpenev" class=""><i class="fas fa-bus"></i> See for yourself</a>
     </div>
 
-    <div class="card text-center">
+    <div class="card">
       <ul class="list-inline">
         <li>
           <a href="facebook.com">
-            <i class="fab fa-facebook-square">Facebook</i>
+            <i class="fab fa-facebook-square"></i>
           </a>
         </li>
         <li>
           <a href="instagram.com">
-            <i class="fab fa-instagram">Instagram</i>
+            <i class="fab fa-instagram"></i>
           </a>
         </li>
         <li>
           <a href="slack.com">
-            <i class="fab fa-slack">Slack</i>
+            <i class="fab fa-slack"></i>
           </a>
         </li>
       </ul>
@@ -44,35 +44,41 @@
         <tbody>
           <tr>
             <td>
-              <img src="images/movie.jpg" alt="Cloud Atlas Movie Poster" width="200" height="300" >
-            </td>
-            <td>
-              <h3>Cloud Atlas</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores illum, voluptates quis voluptate, reiciendis quidem deserunt qui sapiente voluptas vel, tenetur sit ab?
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="images/movie.jpg" alt="Cloud Atlas Movie Poster" width="200" height="300" >
-            </td>
-            <td>
-              <h3>Cloud Atlas</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam error esse iure incidunt ipsam minima, accusantium inventore voluptatum distinctio velit odit, nulla alias!
-              </p>
+              <div class="movie-card">
+                <img src="images/cloud.jpg" alt="Cloud Atlas Movie Poster" width="200" height="300" >
+              </td>
+              <td>
+                <h3>Cloud Atlas</h3>
+                <p>
+                  An exploration of how the actions of individual lives impact one another in the past, present and future, as one soul is shaped from a killer into a hero, and an act of kindness ripples across centuries to inspire a revolution.
+                </p>
+              </div>
             </td>
           </tr>
           <tr>
             <td>
-              <img src="images/movie.jpg" alt="Cloud Atlas Movie Poster" width="200" height="300" >
+              <div class="movie-card">
+                <img src="images/proposal.jpg" alt="The Proposal Movie Poster" width="200" height="300" >
+              </td>
+              <td>
+                <h3>The Proposal</h3>
+                <p>
+                  A pushy boss forces her young assistant to marry her in order to keep her visa status in the U.S. and avoid deportation to Canada.
+                </p>
+              </div>
             </td>
+          </tr>
+          <tr>
             <td>
-              <h3>Cloud Atlas</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum maxime iste, sunt, autem magni voluptatum ab. Suscipit illum dicta voluptatum, illo obcaecati ex!
-              </p>
+              <div class="movie-card">
+                <img src="images/interstellar.jpg" alt="Interstellar Movie Poster" width="200" height="300" >
+              </td>
+              <td>
+                <h3>Interstellar</h3>
+                <p>
+                  A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.
+                </p>
+              </div>
             </td>
           </tr>
         </tbody>
@@ -100,9 +106,10 @@
     </div>
 
     <div class="card text-center">
-      <h2>About this page</h2>
-      <h3>This page was created @</h3>
-      <a href="https://lewagon.com/program" target="_blank">FullStack program @LeWagon</a>
+      <h3>This page was created @</h4>
+      <h3>
+        <a href="https://lewagon.com/program" target="_blank">FullStack program @LeWagon</a>
+      </h2>
     </div>
 
   </div>
