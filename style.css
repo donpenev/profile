@@ -47,7 +47,7 @@ i {
 }
 
 .container {
-  width: 530px;
+  width: 864px;
   margin: 0 auto;
 }
 
@@ -92,6 +92,22 @@ i {
 
 #top > a > i {
   font-size: 20px;
+}
+
+#sidebar {
+  position: fixed;
+  width: 300px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(245,245,245);
+  opacity: 0.6;
+  color: #a4d4db;
+  font-size: 30px;
+}
+
+#page-content {
+  margin-left: 300px;
 }
 
 @media (max-width: 960px) {
