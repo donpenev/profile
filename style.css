@@ -1,17 +1,49 @@
 body {
-  background-color: rgb(235,235,235);
-  font-family: 'Ubuntu', sans-serif;
-  color: rgb(83,83,83);
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 400;
   font-size: 13px;
-  font-weight: 500;
-  line-height: 17px;
+/*
+  line-height: 1em;*/
+  color: #848181;
+  background-color: rgba(220, 220, 220, 0.55);
+  margin: 0;
 }
 
-h1, h2, h3 {
-  font-family: 'Raleway', sans-serif;
-  color: rgb(37,37,37);
+h1 h2 h3{
+  color: rgb(119, 110, 110);
+/*
+  line-height*/
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 29px;
+}
+
+h2{
   font-size: 23px;
-  line-height: 23px;
+}
+
+h3 {
+  font-size: 19px;
+}
+
+h4 {
+  font-size: 17px;
+}
+
+a {
+  color: #CDCDCD;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(119, 110, 110);
+}
+
+i {
+  font-size: 40px;
 }
 
 .container {
@@ -20,52 +52,58 @@ h1, h2, h3 {
 }
 
 .card {
-  background: rgb(240,240,240);
-  border: 2px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 1px 0px rgba(230,230,230,1);
-  padding: 5px 0px;
-  margin: 10px 0px;
+  background-color: #f9f9f9;
+/*  border:;*/
+  border-radius: 7px;
+  box-shadow: 2px 2px 0px 1px rgba(245,245,245,0.71);
+  padding: 20px;
+  margin-bottom: 20px;
+  /*box-shadow*/
 }
 
+.img-circle {
+  border-radius: 50%;
+}
 .text-center {
   text-align: center;
 }
 
-.image-circle {
-  border-radius: 50%;
-  width: 190px;
-  height: 190px;
+.avatar-normal{
+  width:167px;
+  height: 167px;
+}
+
+.movie-card {
+  margin: 10px auto;
+}
+
+.movie-card > img {
+  margin-right: 7px;
 }
 
 .list-inline > li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 50px;
 }
 
-a {
-  color: rgba(0,0,0,0.63);
-  text-decoration: none;
+#top{
+  margin-top: 10px;
 }
 
-a:hover {
-  color: rgba(0,0,0,0.95)
-}
-
-i {
+#top > a > i {
   font-size: 20px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
-    width: 500px;
+    width: 700px;
   }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
   .container {
-    width: 385px;
+    width: 500px;
   }
 }
 @media (max-width: 540px) {
@@ -74,3 +112,4 @@ i {
     width: 300px;
   }
 }
+
